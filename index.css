@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+body{
+    background-image: linear-gradient(140deg,black,gray,red);
+}
+.card{
+    box-shadow: 6px 15px 30px;
+    background: rgba(155, 145, 145, 0.25);
+    border-radius: 30px; 
+    color:black;
+}
