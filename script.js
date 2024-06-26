@@ -14,7 +14,7 @@ function getloc() {
         const l = result.coords;
         lon = l.longitude;
         lat = l.latitude;
-        console.log({ "lon": lon, "lat": lat });
+      
         const data = await fetch(`${url}weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric `);
        
         if (data.status == 200) {
