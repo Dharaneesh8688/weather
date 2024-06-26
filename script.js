@@ -34,10 +34,10 @@ function getloc() {
 async function search() {
     const cityName = cityInput.value;
     const data = await fetch(`${url}weather?q=${cityName}&appid=${API_KEY}&units=metric `);
-    console.log(data);
+   
     if (data.status == 200) {
         const info = await data.json();
-        console.log(info);
+       
         hname.innerHTML = info.name;
         temp.innerHTML = info.main.temp;
         wind.innerHTML = info.wind.speed;
