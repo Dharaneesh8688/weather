@@ -16,10 +16,10 @@ function getloc() {
         lat = l.latitude;
         console.log({ "lon": lon, "lat": lat });
         const data = await fetch(`${url}weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric `);
-        console.log(data);
+       
         if (data.status == 200) {
             const info = await data.json();
-            console.log(info);
+           
             img.src= `https://openweathermap.org/img/wn/${info.weather[0].icon}@2x.png`;
             hname.innerHTML = info.name;
             temp.innerHTML = info.main.temp;
